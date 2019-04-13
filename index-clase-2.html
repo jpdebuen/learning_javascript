@@ -42,14 +42,63 @@
                 number++
             }
 
+            
+            for(var i = 100; i > 0; i--){
+                console.log(i);
+            }
+
             */
 
+
+            /*  MÉTODOS
             
-            for(var i = 0; i < 100; i++){
-                if(i%3 === 0){
-                    console.log(i);
+            var greeting = "Hello";
+
+            greeting.metodo(argumento)
+
+            greeting.length ----> cantidad de caracteres
+
+            greeting.indexOf("searchString", position)
+            greeting.indexOf("H") ----> regresa la posición de la primera letra que recibe como argumento
+            greeting.lastIndexOf("l") ----> busca la última posición del caracter dado
+
+            greeting[posición] ----> regresa el caracter en la posición dada
+
+            greeting.slice(posición, posición) ----> empieza a partir de la posición dada. El primer argumento es inclusivo "[" y el segundo es exclusivo ")".
+
+            greeting.substr(posición, length) 
+            
+            greeting.toUpperCase ----> "HELLO"
+            greeting.toLowerCase
+
+            greeting.charAt() ----> devuelve el caracter en posición
+
+            greeting.split() ----> convierte string a array dado un separador  ["Hello"]
+            greeting.split("") ----> ["H", "e", "l", "l", "o"]
+            var ex = "a,e,i,o,u"
+            ex.split() ----> ["a,e,i,o,u"]
+            ex.split("") ----> ["a", ",", "e", ",", "i", ",", ""o, ",", "u"]
+            ex.split(",") ----> ["a", "e", "i", "o", "u"]
+
+            
+            */
+
+
+            var palabra, contador;
+            contador = 0;
+            palabra = "amArilla";
+
+
+            /*
+            for(var i = 0; i < palabra.length; i++){
+                if((palabra[i] === "a") || (palabra[i] === "A")){
+                    contador++
                 }
             }
+            console.log(contador);
+            */
+
+
 
 
         
