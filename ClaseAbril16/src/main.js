@@ -26,8 +26,6 @@ console.log(reverseWord("ejemplo"));
 /*
 input -> "holi a todos"
 output -> "Holi A Todos"
-*/
-
 
 
 function capitalizer(oracion){
@@ -40,3 +38,35 @@ function capitalizer(oracion){
 }
 
 console.log(capitalizer("holi a todos"));
+*/
+
+/*
+TAREA:
+
+Encriptación César 
+
+Input -> "Hola"
+Output -> "ovsh"
+
+avanza 7 letras en el abecedario
+
+
+
+Pintar esto en la consola:
+
+    #
+   ##
+  ###
+ ####
+#####
+
+pyramid(number)
+
+*/
+
+
+var numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var even_numbers = numbers_array.filter(function(element) {
+    return element % 2 === 0;
+}) 
+
