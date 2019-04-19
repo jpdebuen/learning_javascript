@@ -1,5 +1,3 @@
-/*
-
 var koders_array = [
     {
     'nombre': 'David',
@@ -8,7 +6,10 @@ var koders_array = [
     'hobbies': [
         'Fotografia',
         'Viajar'
-    ]
+    ],
+    "koderHobbies": function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
     },
     {
     'nombre': 'Jorge',
@@ -18,7 +19,10 @@ var koders_array = [
         'Videojuegos',
         'Lectura',
         'Dibujar'
-    ]
+    ],
+    "koderHobbies": function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
     },
     {
     'nombre': 'Erick',
@@ -27,7 +31,10 @@ var koders_array = [
     'hobbies': [
         'Caligrafia',
         'Videojuegos'
-    ]
+    ],
+    "koderHobbies": function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
     },
     {
     'nombre': 'Diana',
@@ -36,7 +43,10 @@ var koders_array = [
     'hobbies': [
         'Hardware',
         'Videojuegos'
-    ]
+    ],
+    "koderHobbies": function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
     },
     {
     'nombre': 'Rodo',
@@ -45,10 +55,19 @@ var koders_array = [
     'hobbies': [
         'Musica',
         'Programacion'
-    ]
+    ],
+    "koderHobbies": function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
     }
 ];
-    
+
+koders_array.forEach(function(element){
+    console.log(element.koderHobbies());
+})
+
+/*
+
 // Nombres de koders
 koders_array.forEach(function(element){
     console.log(element.nombre);
@@ -104,14 +123,18 @@ var car_obj = {
 
 */
 
-var persona = {
-    "nombre": "Jorge",
+var person = {
+    "firstName": "Jorge",
+    "secondName": "Pablo",
     "apellidoPaterno": "de Buen",
     "apellidoMaterno": "Arizmendi",
-    getFullName: function(){
-        return this.nombre + " " + this.apellidoPaterno + " " + this.apellidoMaterno;
+    fullName: function(){
+        return this.firstName + " " + this.secondName + " " + this.apellidoPaterno + " " + this.apellidoMaterno;
     }
 }
+
+
+
 
 
 
