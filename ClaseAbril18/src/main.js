@@ -1,3 +1,5 @@
+/*
+
 var koders_array = [
     {
     'nombre': 'David',
@@ -66,7 +68,6 @@ koders_array.forEach(function(element){
     console.log(element.koderHobbies());
 })
 
-/*
 
 // Nombres de koders
 koders_array.forEach(function(element){
@@ -121,7 +122,7 @@ var car_obj = {
 };
 
 
-*/
+
 
 var person = {
     "firstName": "Jorge",
@@ -133,10 +134,28 @@ var person = {
     }
 }
 
+*/
+
+function Car(color, brand, model, year){
+    this.color = color
+    this.brand = brand
+    this.model = model
+    this.year = year
+}
 
 
+function Koder(name, age, gender, hobbies){
+    this.name = name
+    this.age = age
+    this.gender = gender
+    this.hobbies = hobbies
+    this.listHobbies = function(){
+        return "Hola! Soy " + this.nombre + " y mis hobbies son " + this.hobbies.join(", ");
+    }
+}
 
+var built_koders = [new Koder("David", "22", "M", ["Fotografía", "Viajar"]), new Koder("Jorge", "23", "M", ["Videojuegos", "Lectura", "Dibujar"]), new Koder("Erick", "25", "M", ["Caligrafia", "Videojuegos"]), new Koder("Diana", "27", "F", ["Hardware", "Videojuegos"]), new Koder("Rodo", "32", "M", ["Musica", "Programacion"])];
 
-
-
-
+built_koders.forEach(function(element){
+    console.log(element.listHobbies());
+})
