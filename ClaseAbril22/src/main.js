@@ -3,9 +3,10 @@
 /*
 function checkForSpace(element){
     if (element.includes(" ") === true){
-        return element.slice()
+        return element.split(" ").pop();
     }
 }
+??????
 */
 
 
