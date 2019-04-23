@@ -7,7 +7,7 @@ function checkForSpace(element){
     }
 }
 ??????
-*/
+
 
 
 var person_array = [
@@ -58,6 +58,43 @@ person_array.forEach(function(obj){
     var new_person = new Person(obj.nombre, obj.aPaterno, obj.aMaterno, obj.fechaNacimiento, obj.genero);
     console.log(new_person.getCURP());
 })
+
+
+*/
+
+
+var divs_array = [
+    {
+        "height": "100px",
+        "width": "30px",
+        "backgroundColor": "red"
+    },
+    {
+        "height": "100px",
+        "width": "30px",
+        "backgroundColor": "peru"
+    },
+    {
+        "height": "100px",
+        "width": "30px",
+        "backgroundColor": "green"
+    },
+    {
+        "height": "100px",
+        "width": "30px",
+        "backgroundColor": "yellow"
+    },
+    {
+        "height": "100px",
+        "width": "200px",
+        "backgroundColor": "blue"
+    }
+]
+
+
+var divs = document.getElementsByTagName("div");
+
+divs_array.forEach
 
 
 
