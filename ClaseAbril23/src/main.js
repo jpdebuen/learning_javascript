@@ -52,13 +52,13 @@ function Car(marca, color, transmision, anio, precio){
     this.anio = anio;
     this.precio = precio;
     this.getPrecio = function(){
-        return this.precio;
+        return "El precio de este auto es: " + this.precio;
     };
     this.getTransmision = function(){
-        return this.transmision;
+        return "La transmisión de este auto es: " + this.transmision;
     };
     this.getMarca = function(){
-        return this.marca;
+        return "La marca de este auto es: " + this.marca;
     };
     this.getData = function(){
         return "El auto tiene las siguientes especificaciones: " + this.getPrecio() + ", " + this.getTransmision() + ", " + this.getMarca();
