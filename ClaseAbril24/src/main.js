@@ -1,0 +1,5 @@
+console.log(document.getElementsByTagName("div"))
+console.log(document.getElementsByTagName("ul"))
+console.log(document.getElementsByTagName("li"))
+console.log(document.getElementsByClassName("even"))
+console.log(document.getElementsByTagName("li")[3])
