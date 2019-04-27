@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
         <title>Vending machine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
+    <div class="vending-machine d-flex container">
+        <!-- CONTENEDOR DE PRODUCTOS -->
+        <div class="container">
+            <!-- ROW -->
+            <div class="row m-2 p-2">
+                <div class="col-sm-3">
+                    <!-- SLOT -->
+                    <div class="slot d-flex flex-column border border-success rounded p-3">
+                        <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                        <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="id-producto m-0">#11</p>
+                            <p class="precio-producto m-0">$18.00</p>
+                        </div>
+                        <p class="availability-true text-center m-0">In stock</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <!-- SLOT -->
+                    <div class="slot d-flex flex-column border border-success rounded p-3">
+                        <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                        <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="id-producto m-0">#11</p>
+                            <p class="precio-producto m-0">$18.00</p>
+                        </div>
+                        <p class="availability-true text-center m-0">In stock</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <!-- SLOT -->
+                    <div class="slot d-flex flex-column border border-success rounded p-3">
+                        <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                        <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="id-producto m-0">#11</p>
+                            <p class="precio-producto m-0">$18.00</p>
+                        </div>
+                        <p class="availability-true text-center m-0">In stock</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                        <!-- SLOT -->
+                        <div class="slot d-flex flex-column border border-success rounded p-3">
+                        <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                        <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="id-producto m-0">#11</p>
+                            <p class="precio-producto m-0">$18.00</p>
+                        </div>
+                        <p class="availability-true text-center m-0">In stock</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW -->
+            <div class="row m-2 p-2">
+                <div class="col-sm-3">
+                        <!-- SLOT -->
+                        <div class="slot d-flex flex-column border border-success rounded p-3">
+                            <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                            <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="id-producto m-0">#11</p>
+                                <p class="precio-producto m-0">$18.00</p>
+                            </div>
+                            <p class="availability-true text-center m-0">In stock</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- SLOT -->
+                        <div class="slot d-flex flex-column border border-success rounded p-3">
+                            <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                            <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="id-producto m-0">#11</p>
+                                <p class="precio-producto m-0">$18.00</p>
+                            </div>
+                            <p class="availability-true text-center m-0">In stock</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- SLOT -->
+                        <div class="slot d-flex flex-column border border-success rounded p-3">
+                            <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                            <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="id-producto m-0">#11</p>
+                                <p class="precio-producto m-0">$18.00</p>
+                            </div>
+                            <p class="availability-true text-center m-0">In stock</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- SLOT -->
+                        <div class="slot d-flex flex-column border border-success rounded p-3">
+                            <img src="./img/11-sabritas.png" alt="bolsa de papas Sabritas" height="150px" width="auto">
+                            <p class="nombre-producto text-center my-2">Sabritas Originales</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="id-producto m-0">#11</p>
+                                <p class="precio-producto m-0">$18.00</p>
+                            </div>
+                            <p class="availability-true text-center m-0">In stock</p>
+                        </div> 
+                    </div>
+            </div>
+        </div>
+        <div class="tablero-wrapper d-flex">
+            <div class="keypad"></div>
+            <div class="coins"></div>
+        </div>
+    </div>
+
         
 
-        <script src="./src/main.js"></script>
-
+          <!--SCRIPTS-->
+          <script src="js/jquery-3.3.1.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
