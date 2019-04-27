@@ -42,7 +42,19 @@ function checkCounter(id){
     return getProduct(id).counter != 0;
 }
 
-function buy(id, money){
+function getProductID(){
+    var productID = document.getElementById("id-input").value;
+    return productID;
+}
+
+function getUserMoney(){
+    var userMoney = document.getElementById("money-input").value;
+    return userMoney;
+}
+
+function buy(){
+    var id = getProductID();
+    var money = getUserMoney();
     var product = getProduct(id);
     var isInStock = checkCounter(id)
     var isEnoughMoney = product && (money >= product.price)
