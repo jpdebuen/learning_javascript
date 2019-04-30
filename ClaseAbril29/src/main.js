@@ -13,3 +13,29 @@ var car = {
     "doors": 5,
     "price": 280000,
 }
+
+
+
+function changes(element){
+    element.style.backgroundColor = "blue";
+    element.innerHTML = "Hello";
+}
+
+/*
+function changeClass(element){
+    var classes = variable.classList;
+    if(classes.contains("on")){
+        element.classList.remove("on");
+        element.classList.add("off");
+        element.innerHTML = "OFF";
+    }else{
+        element.classList.remove("off");
+        element.classList.add("on");
+        element.innerHTML = "ON";
+    }
+}
+*/
+
+function toggleClass(element){
+    element.classList.toggle("off");
+}

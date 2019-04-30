@@ -1,0 +1,21 @@
+*{
+    color: white;
+}
+
+#container{
+    width: 100px;
+    height: 100px;
+}
+
+
+.on{
+    content: "ON";
+    border: green, 5px;
+    background-color: lightgreen;
+}
+
+.off{
+    content: "OFF";
+    border: red, 5px;
+    background-color: pink;
+}
