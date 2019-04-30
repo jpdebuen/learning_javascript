@@ -62,3 +62,24 @@ function autoConversionMXN(element){
 function autoConversionUSD(element){
     document.getElementById("mxn_number").value = toUSD(element.value);
 }
+
+/* function toMXN(value) {
+  var element = document.getElementById('number_one')
+  var result = value * 19.03
+  element.value = result
+}
+
+function toUSD(value) {
+  var element = document.getElementById('number_two')
+  var result = value / 19.03
+  element.value = result
+}
+
+function changes(moneda, element) {
+  var value = element.value
+  if(moneda === 'MXN') {
+    toUSD(value)
+  } else {
+    toMXN(value)
+  }
+} */
