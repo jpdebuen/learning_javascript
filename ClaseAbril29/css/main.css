@@ -1,21 +1,41 @@
-*{
-    color: white;
-}
+
 
 #container{
     width: 100px;
     height: 100px;
 }
 
+#container2{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#container3{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+.input-text{
+    height: 40px;
+    width: 200px;
+    margin: 10px 40px;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 4px;
+}
 
 .on{
     content: "ON";
-    border: green, 5px;
+    border-color: green;
+    border-width: 15px;
     background-color: lightgreen;
 }
 
 .off{
     content: "OFF";
-    border: red, 5px;
+    border-color: red;
+    border-width: 15px;
     background-color: pink;
 }

@@ -39,3 +39,26 @@ function changeClass(element){
 function toggleClass(element){
     element.classList.toggle("off");
 }
+
+
+function logChanges(element){
+    console.log(element.value);
+}
+
+// 1USD = 19.03MXN
+
+function toMXN(value){
+    return value*19.03;
+}
+
+function toUSD(value){
+    return value/19.03;
+}
+
+function autoConversionMXN(element){
+    document.getElementById("usd_number").value = toMXN(element.value);
+}
+
+function autoConversionUSD(element){
+    document.getElementById("mxn_number").value = toUSD(element.value);
+}
