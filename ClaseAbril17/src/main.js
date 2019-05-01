@@ -128,9 +128,8 @@ koders_obj["one"]
 
     // Koders a los que les gustan los videojuegos
     var koders_videojuegos = koders_array.filter(function(element){
-        var flag;
-        return element.hobbies.forEach(function(element){
-            
+        var filter_elements = element.hobbies.map(function(element){
+            return
         })
     });
 

@@ -133,7 +133,7 @@ var nodeObj = {
 }
 
 
-function createSchool(tag){
+function createElement(tag){
     return document.createElement(tag);
 }
 
@@ -154,7 +154,7 @@ function createStudents(students){
 }
 
 function createStructure(nodeObj){
-    var schoolNode = createSchool(nodeObj.tag);
+    var schoolNode = createElement(nodeObj.tag);
     nodeObj.groups.forEach(function(groups){
         var groupsNode = createGroups(groups);
         schoolNode.appendChild(groupsNode);
