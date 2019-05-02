@@ -1,0 +1,10 @@
+#container{
+    width: 100px;
+    height: 100px;
+}
+
+.input-text{
+    height: 40px;
+    width: 200px;
+    margin: 0px 40px;
+}
