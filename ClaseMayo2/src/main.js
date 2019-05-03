@@ -77,3 +77,14 @@ function buildStructure(result) {
     console.table(resObj["-LdvRidGHCWTOddNt9W3"]);
     buildPets(resObj["-LdvRidGHCWTOddNt9W3"]);
 }
+
+
+/* ECMAScript 6 */
+
+/*
+Palabras reservadas:
+
+- const
+- let
+
+*/
