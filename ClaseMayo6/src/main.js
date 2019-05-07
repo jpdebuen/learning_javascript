@@ -16,3 +16,10 @@ $(".dd-button").on("click", ()=>{
 });
 */
 
+
+
+$(".btn").click((event)=>{
+  $(event.target).closest(".card-wrapper").fadeOut(500, ()=>{
+    $(event.target).closest(".card-wrapper").remove();
+  })
+});

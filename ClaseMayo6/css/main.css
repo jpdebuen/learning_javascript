@@ -4,6 +4,45 @@
 
 body {
   color: navy;
+  transition: background-color 1s ease;
+}
+
+.gray-background {
+  background-color: #eaeaea;
+}
+
+.red-background {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.card-wrapper {
+  width: 25%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.card-wrapper .card-title {
+  font-family: arial;
+  font-size: 18px;
+  text-align: center;
+}
+.card-wrapper .card-body {
+  border-top: 1px solid black;
+  padding: 10px;
+}
+.card-wrapper .btn {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: navy;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
 }
 
 /*
@@ -30,8 +69,7 @@ ul{
   height: 30px;
   border-radius: 5px;
   border: 1px solid navy;
-  top: 20px;
-  left: 20px;
+  float: left;
 }
 .custom-dd-wrapper .dd-button {
   width: 100%;
@@ -57,27 +95,21 @@ ul{
   cursor: pointer;
 }
 .custom-dd-wrapper ul {
-  display: none;
   width: 100%;
   position: absolute;
   top: 30px;
   left: 0px;
   list-style: none;
   padding: 0;
+  display: none;
 }
 .custom-dd-wrapper ul li {
   padding: 10px;
   border: 1px solid #333;
 }
 
-.hide {
+.display-none {
   display: none;
-  transition: ease-in-out;
-}
-
-.show {
-  display: block;
-  transition: ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */
