@@ -1,119 +1,69 @@
-$myFavColor:peru;
-$mainShadow:#eaeaea;
-$mainBlue:navy;
-$secondaryBlue:#0000ff;
-
-*{
-	box-sizing: border-box;
-}
-
-body{
-	//background:$myFavColor;
-	color:$mainBlue;
-	transition:background-color 1s ease;
-}
-
-.gray-background{
-	background-color:#eaeaea;
-}
-
-.red-background{
-	background-color:rgba(255,0,0,.5)
-}
-
-.card-wrapper{
-	width:25%;
-	height:200px;
-	padding:10px;
-	border-radius:10px;
-	margin-right:20px;
-	display:inline-block;
-	border:1px solid black;
-	.card-title{
-		font-family:arial;
-		font-size:18px;
-		text-align:center
-	}
-	.card-body{
-		border-top:1px solid black;
-		padding:10px;
-	}
-	.btn{
-		width:70%;
-		margin-top:10px;
-		margin-bottom:10px;
-		border-radius:10px;
-		background:navy;
-		color:white;
-		text-align:center;
-		cursor:pointer;
-		padding:10px;
-	}
-}
-/*
-ul{
-	width:50%;
-	display:block;
-	margin-left:auto;
+form{
+	width: 50%;
+	margin-left: auto;
 	margin-right: auto;
+	display: block;
+	padding: 20px;
 	margin-top: 20px;
-	li{
-		padding:10px;
-		border:1px solid $secondaryBlue;
-		&.first-li{
-			background:$mainShadow;
+	border: 1px solid #cccccc;
+	box-shadow: 10px 10px 10px rgba(51, 51, 51, .2);
+	border-radius: 5px;
+	h1{
+		margin-bottom: 30px;
+	}
+	.form-group{
+		width: 100%;
+		display: block;
+		label,input{
+			width: 100%;
 		}
-		&:nth-of-type(even){
-			background:slateGray;
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+		input{
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 10px;
+			padding-left: 20px;
 		}
 	}
-}*/
-
-.custom-dd-wrapper{
-	position: relative;
-	width:300px;
-	height: 30px;
-	border-radius:5px;
-	border:1px solid $mainBlue;
-	float:left;
-	.dd-button{
-		width:100%;
-		height:30px;
-		position:absolute;
-		top: 0;
-		left: 0;
-		padding:10px;
-		padding-top:6px;
-		&:after{
-			content:"";
-			width: 0;
-			height: 0;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			border-top: 10px solid black;
-			right:10px;
-			top:10px;
-			position:absolute;
-		}
-		&:hover{
-			cursor:pointer;
-		}
-	}
-	ul{
-		width:100%;
-		position:absolute;
-		top: 30px;
-		left: 0px;
-		list-style:none;
-		padding:0;
-		display: none;
-		li{
-			padding:10px;
-			border:1px solid #333;
-		}
+	#submit-button{
+		width:200px;
+		height:40px;
+		margin-top:20px;
+		background:rgb(18, 106, 238);
+		color:white;
+		border-radius:5px;
+		text-align: center;
+		padding-top:7px;
+		cursor: pointer;
 	}
 }
-
-.display-none{
-    display:none;
+.data-wrapper{
+	display:flex;
+	width:100%;
+	margin-top:20px;
+	.data-card{
+		flex-basis:20%;
+		flex-shrink: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+		border:1px solid #333;
+		box-shadow: 10px 10px 10px rgba(51, 51, 51, .2);
+		padding:20px;
+		border-radius:5px;
+		#delete-button{
+			position: relative;
+			width:200px;
+			height:40px;
+			margin-top:20px;
+			background:rgb(216, 56, 56);
+			color:white;
+			border-radius:5px;
+			text-align: center;
+			padding-top:7px;
+			cursor: pointer;
+		}
+	}
 }

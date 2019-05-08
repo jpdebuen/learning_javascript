@@ -1,73 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Clase 6 de mayo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <div class="card-wrapper">
-                <h1 class="card-title">Title 1</h1>
-                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, corporis.</div>
-                <div class="btn">Dismiss Card</div>
-            </div>
-            <div class="card-wrapper">
-                <h1 class="card-title">Title 2</h1>
-                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, corporis.</div>
-                <div class="btn">Dismiss Card</div>
-            </div>
-            <div class="card-wrapper">
-                <h1 class="card-title">Title 3</h1>
-                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, corporis.</div>
-                <div class="btn">Dismiss Card</div>
-            </div>
-            <div class="card-wrapper">
-                <h1 class="card-title">Title 4</h1>
-                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, corporis.</div>
-                <div class="btn">Dismiss Card</div>
-            </div>
-            <!--ul class="gray-background">
-                <li class="list-item">item 1</li>
-                <li class="list-item">item 2</li>
-                <li class="list-item">item 3</li>
-                <li class="list-item">item 4</li>
-                <li class="list-item">item 5</li>
-                <li class="list-item">item 6</li>
-                <li class="list-item">item 7</li>
-                <li class="list-item">item 8</li>
-                <li class="list-item">item 9</li>
-                <li class="list-item">item 10</li>
-            </ul>
-            <div class="custom-dd-wrapper">
-                <div class="dd-button">Selecciona una opción</div>
-                <ul>
-                    <li>Option 1</li>
-                    <li>Option 2</li>
-                    <li>Option 3</li>
-                    <li>Option 4</li>
-                    <li>Option 5</li>
-                </ul>
-            </div>
-            <div class="custom-dd-wrapper">
-                <div id="second-button" class="dd-button">Selecciona una opción</div>
-                <ul>
-                    <li>Option b 1</li>
-                    <li>Option b 2</li>
-                    <li>Option b 3</li>
-                    <li>Option b 4</li>
-                    <li>Option b 5</li>
-                </ul>
-            </div-->
-        
-        
-        <!--SCRIPTS-->
-        <script src="./src/jquery-3.4.1.min.js"></script>
-        <script src="./src/main.js"></script>
-        <script src="./src/bootstrap.min.js"></script>
-        <script src="./src/bootstrap.bundle.min.js"></script>
-	</body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clase 7 de mayo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <form action="">
+    <h1>Agregar mascota</h1>
+    <div class="form-group">
+      <label for="">¿Cuál es el nombre de tu mascota?</label>
+      <input id="pet-name" type="text" class="form-control" placeholder="Nombre de tu mascota" value="Shanti">
+    </div>
+    <div class="form-group">
+      <label for="">¿Cuál es la raza de tu mascota?</label>
+      <input id="pet-breed" type="text" class="form-control" placeholder="Indica su raza" value="Habanese">
+    </div>
+    <div class="form-group">
+      <label for="">¿Cuál es la edad de tu mascota?</label>
+      <input id="pet-age" type="text" class="form-control" placeholder="Indica su edad" value="6 años">
+    </div>
+    <div id="submit-button" class="btn">Agregar mascota</div>
+  </form>
+
+  <div class="data-wrapper">
+    <div class="data-card">
+      <p>El nombre de mi mascota es: <span>Chester</span>></p>
+      <p>, su raza es <span>Pug</span> </p>
+      <p>y tiene <span>6 años</span> </p>
+      <!-- <div id="delete-button" class="btn">Borrar mascota</div> -->
+    </div>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="./src/jquery-3.4.1.min.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/bootstrap.min.js"></script>
+  <script src="./src/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
