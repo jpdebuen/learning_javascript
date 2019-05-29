@@ -86,6 +86,8 @@ app.use((request, response, next) => {
     next();
 });
 
+app.use("/static", express.static("../public"));
+
 app.get("/object", (request, response) => response.send(petObj));
 app.get("/jorge", (request, response) => response.send("jorge es una persona."))
 app.get("/html", (request, response) => response.send(`
