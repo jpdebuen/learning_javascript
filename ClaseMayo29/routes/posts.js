@@ -14,3 +14,4 @@ router.post("/JSONs", (request, response) => {
     response.send(`Con POST guardamos el valor para nombre: ${name} ${age}`);
 });
 
+module.export = router;

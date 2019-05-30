@@ -116,13 +116,20 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 /* ---CLASE DEL--- 29 */
 
 const express = require("express");
+const routes = require("../routes/posts.js");
 const app = express();
+const fs = require("fs");
 const port = 4555;
 
-app.use(express.json())
+let data = fs.readFileSync("../datos.json", "utf-8");
+
+app.use(express.json());
+app.use(routes);
+
+console.log(data);
 
 app.get("/", (request, response) => {
-    console.log('POST exec')
+    console.log('POST exec');
     response.send('Aquí se ejecutó el GET.');
 });
 
