@@ -1,0 +1,10 @@
+.nombre-producto{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.tablero-wrapper{
+    height: 60vh;
+    width: 20%;
+    background-color: #F5F5F5;
+}
